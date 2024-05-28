@@ -1,0 +1,21 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media
+
+# If you're using PyCharm IDE
+.idea/
+
+# If you're using Visual Studio Code
+.vscode/
+
+# If you're using virtualenv
+venv/
+env/
+ENV/
+
+# If you're using macOS
+.DS_Store

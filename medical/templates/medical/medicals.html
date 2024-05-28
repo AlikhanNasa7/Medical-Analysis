@@ -1,0 +1,308 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Medicals
+{% endblock %}
+
+{% block links %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href={% static "medical/fonts2/icomoon/style.css" %}>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href={% static "medical/css2/bootstrap.min.css"%}>
+
+    <!-- Style -->
+    <link rel="stylesheet" href={% static "medical/css2/style.css" %}>
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap">
+        <div class="col-md-8">
+          <div class="form h-100">
+            <h3>Enter the blood test results</h3>
+            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.age.id_for_label }}" class="col-form-label">Age</label>
+            {{ form.age }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.gender.id_for_label }}" class="col-form-label">Gender</label>
+            {{ form.gender }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.WBC.id_for_label }}" class="col-form-label">WBC</label>
+            {{ form.WBC }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.RBC.id_for_label }}" class="col-form-label">RBC</label>
+            {{ form.RBC }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Continent.id_for_label }}" class="col-form-label">Continent</label>
+            {{ form.Continent }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Capital.id_for_label }}" class="col-form-label">Capital</label>
+            {{ form.Capital }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.MCV.id_for_label }}" class="col-form-label">MCV</label>
+            {{ form.MCV }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.MCH.id_for_label }}" class="col-form-label">MCH</label>
+            {{ form.MCH }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.HGB.id_for_label }}" class="col-form-label">HGB</label>
+            {{ form.HGB }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.HCT.id_for_label }}" class="col-form-label">HCT</label>
+            {{ form.HCT }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.MCHC.id_for_label }}" class="col-form-label">MCHC</label>
+            {{ form.MCHC }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.RDW.id_for_label }}" class="col-form-label">RDW</label>
+            {{ form.RDW }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.PLT.id_for_label }}" class="col-form-label">PLT</label>
+            {{ form.PLT }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.MPV.id_for_label }}" class="col-form-label">MPV</label>
+            {{ form.MPV }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Neutrophils.id_for_label }}" class="col-form-label">Neutrophils</label>
+            {{ form.Neutrophils }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Lymphocytes.id_for_label }}" class="col-form-label">Lymphocytes</label>
+            {{ form.Lymphocytes }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Monocytes.id_for_label }}" class="col-form-label">Monocytes</label>
+            {{ form.Monocytes }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Eosinophils.id_for_label }}" class="col-form-label">Eosinophils</label>
+            {{ form.Eosinophils }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Basophils.id_for_label }}" class="col-form-label">Basophils</label>
+            {{ form.Basophils }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Glucose.id_for_label }}" class="col-form-label">Glucose</label>
+            {{ form.Glucose }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Urea.id_for_label }}" class="col-form-label">Urea</label>
+            {{ form.Urea }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Creatinine.id_for_label }}" class="col-form-label">Creatinine</label>
+            {{ form.Creatinine }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Cholesterol.id_for_label }}" class="col-form-label">Cholesterol</label>
+            {{ form.Cholesterol }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.HDL.id_for_label }}" class="col-form-label">HDL</label>
+            {{ form.HDL }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.LDL.id_for_label }}" class="col-form-label">LDL</label>
+            {{ form.LDL }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Triglycerides.id_for_label }}" class="col-form-label">Triglycerides</label>
+            {{ form.Triglycerides }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.ALT.id_for_label }}" class="col-form-label">ALT</label>
+            {{ form.ALT }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.AST.id_for_label }}" class="col-form-label">AST</label>
+            {{ form.AST }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Bilirubin.id_for_label }}" class="col-form-label">Bilirubin</label>
+            {{ form.Bilirubin }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Total_Protein.id_for_label }}" class="col-form-label">Total Protein</label>
+            {{ form.Total_Protein }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Albumin.id_for_label }}" class="col-form-label">Albumin</label>
+            {{ form.Albumin }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Globulin.id_for_label }}" class="col-form-label">Globulin</label>
+            {{ form.Globulin }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Calcium.id_for_label }}" class="col-form-label">Calcium</label>
+            {{ form.Calcium }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Phosphorus.id_for_label }}" class="col-form-label">Phosphorus</label>
+            {{ form.Phosphorus }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Magnesium.id_for_label }}" class="col-form-label">Magnesium</label>
+            {{ form.Magnesium }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Sodium.id_for_label }}" class="col-form-label">Sodium</label>
+            {{ form.Sodium }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Potassium.id_for_label }}" class="col-form-label">Potassium</label>
+            {{ form.Potassium }}
+        </div>
+        <div class="col-md-6 form-group mb-5">
+            <label for="{{ form.Chloride.id_for_label }}" class="col-form-label">Chloride</label>
+            {{ form.Chloride }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="submit" value="Obtain the results" class="btn btn-primary rounded-0 py-2 px-4">
+            <span class="submitting"></span>
+        </div>
+    </div>
+</form>
+
+            <div id="form-message-warning mt-4"></div>
+            <div id="form-message-success">
+              Your message was sent, thank you!
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4" style="color: white;">
+  <div class="contact-info h-100">
+    <h3>Useful Tips for Data Entry</h3>
+    <ul class="list-unstyled">
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Age:</strong> Enter your current age. Accurate age helps in risk assessment for age-related diseases.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Gender:</strong> Selecting the correct gender can impact the accuracy of disease risk assessments.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>WBC (White Blood Cell count):</strong> Check your latest blood test results for accuracy. Values outside the normal range might indicate an infection or inflammation.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>RBC (Red Blood Cell count):</strong> Low RBC may indicate anemia. Provide the most recent test result.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>HGB (Hemoglobin):</strong> Important for transporting oxygen. Low levels may indicate anemia.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>HCT (Hematocrit):</strong> Measures concentration of red blood cells in blood. Critical for diagnosing anemia and other conditions.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>MCV (Mean Corpuscular Volume):</strong> Helps to classify types of anemia. Low or high MCV can indicate different types of anemia.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>MCH (Mean Corpuscular Hemoglobin):</strong> Reflects the average amount of hemoglobin per red cell. Important for diagnosing anemia types.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>MCHC (Mean Corpuscular Hemoglobin Concentration):</strong> Helps evaluate the concentration of hemoglobin in red blood cells.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>RDW (Red Cell Distribution Width):</strong> High RDW levels can indicate significant variations in red cell size, useful in diagnosing anemia.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>PLT (Platelet count):</strong> Essential for blood clotting. Low platelet count can increase bleeding risk.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>MPV (Mean Platelet Volume):</strong> Provides information on platelet size; larger platelets may be more active.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Neutrophils:</strong> A type of white blood cell important for fighting infections.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Lymphocytes:</strong> High levels can indicate viral infections; low levels could be due to severe infection or immunodeficiency.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Monocytes:</strong> High levels can indicate chronic inflammation or infections.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Eosinophils:</strong> High levels might indicate allergic reactions or parasitic infections.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Basophils:</strong> Though typically a small portion of white blood cells, high levels can suggest chronic inflammation or allergic response.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Glucose:</strong> Test on an empty stomach for the most accurate glucose level reading.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Creatinine:</strong> Important for kidney function assessment. High values may indicate a need for increased water intake before testing.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>ALT and AST:</strong> Important liver enzymes. Avoid alcohol and fatty foods before testing to avoid false elevations.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Cholesterol:</strong> Record the latest measurement. High levels may necessitate dietary changes.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Continents:</strong> Select the continent you reside in to consider regional health risks
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Bilirubin:</strong> High levels can indicate liver problems or jaundice. Watch for yellowing of the skin and eyes as a physical sign.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Albumin:</strong> Reflects nutritional status. Low levels could indicate malnutrition or liver issues.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Phosphorus:</strong> Plays a key role in body energy processes; important to keep balanced, especially for kidney health.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Magnesium:</strong> Low levels can cause muscle spasms and general fatigue. Important for heart and nerve functions.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Sodium:</strong> Vital for fluid balance. Monitor closely if you have issues with blood pressure or kidney function.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Potassium:</strong> Essential for muscle function and heart health. Abnormal levels can have significant health impacts.</li>
+      <li class="mb-2" style="color: white; font-size: 14px;"><strong>Chloride:</strong> Works with sodium to help keep your fluid and electrolyte balance. Important for digestion and maintaining pH balance.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <script src={% static "medical/js2/jquery-3.3.1.min.js" %}></script>
+    <script src={% static "medical/js2/popper.min.js" %}></script>
+    <script src={% static "medical/js2/bootstrap.min.js" %}></script>
+    <script src={% static "medical/js2/jquery.validate.min.js" %}></script>
+
+  </body>
+{% endblock %}

@@ -1,0 +1,120 @@
+/*
+#1 color = #a100f2;
+#2 color = #3fbbc0;
+*/
+
+a:hover,
+a:focus {
+    color: #a100f2;
+}
+
+.circled {
+	background: #a100f2;
+}
+
+.con1 > div, .con2 > div, .con3 > div { 
+	background-color: #a100f2;
+}
+
+.scrollup:hover {
+	background: #a100f2;
+}
+
+
+/* service */
+
+.service-icon span {
+	color: #a100f2;
+}
+
+
+
+/* button */
+.btn-skin {
+  background-color: #a100f2;
+  border-color: #a100f2;
+}
+
+
+/* top */
+.top-area {
+	background: #a100f2;
+}
+
+/* menu */
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+	color: #5e1782;
+}
+.navbar-custom.top-nav-collapse .nav li a:hover,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li.active a,.navbar-custom.top-nav-collapse .nav li.active a  {
+    color: #5e1782;
+}
+
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #a100f2;
+}
+
+
+.bg-skin {
+	background: #a100f2;
+}
+
+.highlight-color {
+	background-color: #a100f2;
+}
+.color {
+	color: #ffff;
+}
+
+/* pricing box  */
+.pricing-content.featured h2,.pricing-content.featured .price-bottom {
+	background-color:#3fbbc0;
+}
+.pricing-content.featured h3 {
+	background:#a100f2;
+}
+
+
+
+/* team */
+.cbp-l-grid-team-name {
+    color: #3fbbc0;
+}
+
+.cbp-l-filters-button .cbp-filter-counter {
+	background-color: #a100f2;
+}
+
+.cbp-l-filters-alignLeft .cbp-filter-item-active {
+    /* @editable properties */
+    background-color: #a100f2;
+    border:1px solid #a100f2;
+}
+
+.cbp-l-filters-dropdownWrap {
+    background: #a100f2;
+}
+.cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
+    /* @editable properties */
+    background-color: #a100f2;
+    border-color: #a100f2;
+}
+.cbp-l-caption-buttonLeft,
+.cbp-l-caption-buttonRight {
+    /* @editable properties */
+    background-color: #a100f2;
+}
+
+.cbp-l-caption-buttonLeft:hover,
+.cbp-l-caption-buttonRight:hover {
+    /* @editable properties */
+    background-color: #3fbbc0;
+}
+
+.form-control:focus {
+  border-color: #3fbbc0;
+}

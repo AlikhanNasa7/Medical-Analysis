@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Analysis
+{% endblock %}
+
+
+{% block content %}
+    {% load custom_filters %}
+    <h1>Healthy Stats</h1>
+    <img src="data:image/png;base64,{{ graph_default }}" alt="Graph">
+    <h1>Your Stats</h1>
+    <img src="data:image/png;base64,{{ graph_users }}" alt="Graph">
+
+    <h1>List of Diseases</h1>
+    <ul>
+        {% for disease, explanation in diseases|zip_lists:explanations %}
+            <li><strong>{{ disease }}:</strong> {{ explanation }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
